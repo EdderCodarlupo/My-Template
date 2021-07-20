@@ -1,3 +1,5 @@
+include ../mixins/-mixin
+
 doctype html
 html(lang="es")
   head
@@ -5,6 +7,7 @@ html(lang="es")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title enREDados - Template
+    link(rel="stylesheet", href="css/style.css", attr)
   body
     header.header
       .main-container
@@ -13,6 +16,11 @@ html(lang="es")
         nav.nav
           include ../blocks/_menu
     
+    .banner
+      h1.banner__title Este es un banner
+      p.banner__subtitle Este es un Subtititle
+      +buttonCta("CTA")
+
     aside 
     main.main
     footer.footer
