@@ -10,13 +10,17 @@ html(lang="es")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title= `${pageTitle} - ${siteTitle} `
     link(rel="stylesheet", href="css/style.css", attr)
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+
   body
     header.header
       .main-container.flex-container
         .logo
           a(href="index.html").logo__link enREDados
         nav.nav
-          include ../blocks/_menu
+        .nav__bar 
+          <i class="fas fa-bars"></i>
+        include ../blocks/_menu
     
     .banner
       .banner__content

@@ -1,0 +1,19 @@
+.nav {
+  &__bar {
+    background-color: var(--second-color);
+    color: var(--white-color);
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+.menu {
+  display: none;
+}
