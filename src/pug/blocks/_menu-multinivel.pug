@@ -1,0 +1,40 @@
+-
+  menu = [
+    {
+      title: "home",
+      url: "index.html",
+      child: [ ]
+    },
+    {
+      title: "services",
+      url: " ",
+      child: [
+        {
+          title: "web design",
+          url: "web-design.html"
+        },
+        {
+          title: "seo",
+          url: "seo-html"
+        }        
+      ]
+    },
+    {
+      title: "contact",
+      url: "contact.hml",
+      child: [ ]
+    }
+  ]
+
+
+ul.menu
+  //-Menu de primer nivel
+  each page in menu  
+    li.menu__item 
+      a(href= page.url).menu__link= page.title
+      //-Menu de segundo nivel
+      if page.child.length > 0
+        ul.menu.sub__menu
+          each sub_page in page.child
+            li.menu__item
+              a(href= sub_page.url).menu__link= sub_page.title
