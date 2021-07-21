@@ -12,16 +12,17 @@ html(lang="es")
     link(rel="stylesheet", href="css/style.css", attr)
   body
     header.header
-      .main-container.edder
+      .main-container.flex-container
         .logo
           a(href="index.html").logo__link enREDados
         nav.nav
           include ../blocks/_menu
     
     .banner
-      h1.banner__title Este es un banner
-      p.banner__subtitle Este es un Subtititle
-      +buttonCta("CTA")
+      .banner__content
+        h1.banner__title Este es un banner
+        p.banner__subtitle Este es un Subtititle
+        +buttonCta("CTA")
 
     aside 
     main.main
