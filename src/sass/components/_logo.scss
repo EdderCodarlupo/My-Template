@@ -1,0 +1,10 @@
+.logo {
+  a {
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: bold;
+    &:hover {
+      color: var(--third-color);
+    }
+  }
+}

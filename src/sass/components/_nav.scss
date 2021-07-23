@@ -1,0 +1,16 @@
+.nav {
+  position: fixed;
+  left: 0;
+  top: var(--header-height);
+  width: 100%;
+  background-color: var(--second-color);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.nav.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
